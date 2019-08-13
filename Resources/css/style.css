@@ -24,9 +24,11 @@ html {
 
 .row {
 	height: auto;
-	position: relative;
 
 }
+
+/*HEADER*/
+
 
 header {
 	
@@ -34,6 +36,8 @@ header {
 	background-position: bottom;
 	background-size: 100%;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh;
 }
 
@@ -44,11 +48,15 @@ section {
 	background-color: rgb(249, 250, 250);
 }
 
+/*---logo---*/
+
 .logo {
 	height: 180px;
 	margin-top: 5x;
 	margin-left: 5px;
 }
+
+
 
 .header_name {
 	color: #E1F6F4;
@@ -59,6 +67,9 @@ section {
 	letter-spacing: 6px;
 	
 }
+
+/*---nav---*/
+
 
 li {
 	float: left;
@@ -117,6 +128,9 @@ a {
 
 }
 
+
+/* QUOTE */
+
 blockquote {
 	font-style: italic;
 	font-weight: 300;
@@ -149,10 +163,14 @@ cite {
 background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(74, 74, 74, 0.33)),url(img/paula-may-AJqeO_-ifx0-unsplash.jpg);
 background-position:center; 
 background-size:100%;
+background-repeat: no-repeat;
+background-size: cover;
 background-attachment: fixed;
 padding: 70px 20px;
 }
 
+
+/*HOW IT WORKS*/
 
 #how_works {
 	margin: 0px 20px;
@@ -199,19 +217,85 @@ padding: 70px 20px;
 }
 
 
-/* Wyprawy */
+/* TRAVELS SECTIONS */
+
+
 
 .phototravel {
-	height: 90%;
-	width: 90%; 
+	height: auto;
+	width: 100%;
+	margin-left: 2%;
+	border-radius: 5%;
+	padding-left: 2%;
 }
 
+.travels {
+	
+	background-color: rgba(242, 242, 242, 0.55);
+}
+
+
+.travels_title {
+	color: rgba(91, 180, 180, 0.77);
+	font-weight: 400;
+	font-size: 150%;
+	word-spacing: 1px;
+	letter-spacing: 3px;
+	margin-left: 2%;
+	padding-left: 2%;
+	text-align:center; 
+
+	}
+.quote {
+	font-size: 10%;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	font-size: 90%;
+	text-align: center;
+	line-height: 30px;
+	color: #696d6d
+
+
+}
+
+
+.names {
+	font-size: 80%;
+	color: #9bacac;
+	font-weight: 300;
+	font-style: italic;
+	text-align:center;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- GRID --- */
 
 /*  SECTIONS  */
 .section {
 	clear: both;
-	padding: 0px;
-	margin: 0px;
+	margin: 0%;
+	padding: 4%; 
 }
 
 /*  COLUMN SETUP  */
