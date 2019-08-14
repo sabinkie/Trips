@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-		<link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		
+		<link href="Vendors/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+		<link href="Resources/css/media.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400&display=swap" rel="stylesheet">
 		<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
+		
 
 
-		<meta charset="utf-8">
 
 
 		<title>Trips</title>
 	</head>
 	<body>
+		<div class="container-fluid">
 		<header>
-			<nav>
-				<div class="row">
+			<div class="nav">
+				<nav>
 					<img src="Resources/img/logo_green_transparent.png" alt="Trips logo" class="logo">
 					<ul>
 						<li>Wyprawy
@@ -29,17 +38,17 @@
 						<li class="btn btn__account">Moje konto
 						</li>
 					</ul>
+						
 				
-				
-				
-				</div>
-			</nav>
+				</nav>
+			</div>
 			<div>
 				<p class="header_name">Odkryj w sobie podróżnika!</p>
 				<a href="x" class="btn btn__white">Rezerwuj wyprawę</a>
 			</div>
 		</header>
-		
+		</div>
+		<div class="container-fluid">
 		<section>
 		
 			<h2 id="how_works">Jak to działa?
@@ -47,50 +56,52 @@
 			<p id="how_works_bottom">Organizujemy podróże małe i duże. Samotna wyprawa, podróż poślubna, wyjazd z rodziną, Azja, Afryka a może roczna wyprawa dookoła świata?</p>
 
 			<div class="section group">
-				<div class="col span_1_of_3 columns steps">
-					<i class="icon ion-md-heart"></i>
-					<p>Wypełnij formularz i wyślij nam oczekiwania co do wyprawy oraz informację o budżecie jakim dysponujesz.</p>
-				</div>
-				<div class="col span_1_of_3 columns steps"> 
-					<i class="icon ion-md-happy"></i>
-					<p>Twój personalny opiekun odezwie się do Ciebie w ciągu 24h aby uzyskać więcej szczegółów. Przygotowania mogą potrwać od kilku dni do kilku miesięcy, w zależności jakie są Twoje plany i marzenia.</p>
-				</div>
-				<div class="col span_1_of_3 columns steps">
-					<i class="icon ion-md-person"></i>
-					<p>Wolny ptak lub dusza towarzystwa? Podczas wyprawy możesz pozostać pod naszą stałą opieką - wirtualną lub na miejscu.</p>
+				<div class="row">
+					<div class="col-sm-4 columns steps">
+						<i class="icon ion-md-heart"></i>
+						<p>Wypełnij formularz i wyślij nam oczekiwania co do wyprawy oraz informację o budżecie jakim dysponujesz.</p>
+					</div>
+					<div class="col-sm-4 columns steps"> 
+						<i class="icon ion-md-happy"></i>
+						<p>Twój personalny opiekun odezwie się do Ciebie w ciągu 24h aby uzyskać więcej szczegółów. Przygotowania mogą potrwać od kilku dni do kilku miesięcy, w zależności jakie są Twoje plany i marzenia.</p>
+					</div>
+					<div class="col-sm-4 columns steps">
+						<i class="icon ion-md-person"></i>
+						<p>Wolny ptak lub dusza towarzystwa? Podczas wyprawy możesz pozostać pod naszą stałą opieką - wirtualną lub na miejscu.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section>
 			<div class="travels">
-			<div class="section group">
-				<div class="col span_1_of_2">
+			<div class="row">
+				<div class="col-lg-6">
 					<img src=Resources/css/img/roberto-nickson-bd6WND-S-L8-unsplash.jpg class="phototravel">
 				</div>
-				<div class="col span_1_of_2">
+				<div class="col-lg-6">
 					<h3 class="travels_title">Podróż poślubna jak z bajki...</h3>
 					<blockquote class="quote">Nasza podróż poślubna w Meksyku była po prostu niesamowita. Cisza, spokój pośród palm i szumiących fal, czego chcieć więcej? Dziękujemy Trips za organizację, inne biura nie mają aż tak indywidualnego podejścia! Jesteście wspaniali! Bez was nie byłoby to możliwe!</blockquote>
 					<p class="names">Magda i Olek</p>
 			
 				</div>
 			</div>
-			<div class="section group">
-				<div class="col span_1_of_2">
+			<div class="row">
+				<div class="col-lg-6">
 					<h3 class="travels_title">Rodzinny urlop...</h3>
 					<blockquote class="quote">Chcieliśmy wypocząć z naszą rodzinką gdzieś za granicą ale bez korzystania ze zbiorowych wycieczek. Trips zorganizował nam wspaniały wypoczynek w Toskani, w agroturystyce prowadzonej przez cudowną włoską rodzinę. Nasze dzieci były zachwycone zwierzętami a my przepyszną, domową kuchnią.</blockquote>
 					<p class="names">Marta, Marek, Agatka, Karolek i Julcia </p>
 				</div>
-				<div class="col span_1_of_2">
+				<div class="col-lg-6">
 					<img src=Resources/css/img/irina-murza-vENEN2cryYQ-unsplash.jpg class="phototravel">
 					
 			
 				</div>
 			</div>
-			<div class="section group all_travels">
-				<div class="col span_1_of_2">
+			<div class="row all_travels">
+				<div class="col-lg-6">
 					<img src=Resources/css/img/ibrahim-rifath-Y6tBl0pTe-g-unsplash.jpg class="phototravel">
 				</div>
-				<div class="col span_1_of_2">
+				<div class="col-lg-6">
 					<h3 class="travels_title">Świat na wyciągnięciu ręki...</h3>
 					<blockquote class="quote">Zawsze marzyłam o podróży dookoła świata. Jestem trochę bojaźliwym typem, martwię się, że coś nie wypali, zostanę na lodzie gdzieś w nieznanym miejscu, ktoś mnie okradnie, itp. Powstrzymywało mnie to przed podróżą przez długie lata. Dzięki Trips przełamałam strach! Z taką opieką podróż to tylko przyjemność! </blockquote>
 					<p class="names">Alicja</p>
@@ -98,13 +109,13 @@
 				</div>
 				
 			</div>
-			<div class="section group">
-				<div class="col span_1_of_2">
+			<div class="row">
+				<div class="col-lg-6">
 					<h3 class="travels_title">W sercu lasu...</h3>
 					<blockquote class="quote">Podczas mojej samotnej wyprawy do dziczy w końcu odetchnąłem od codziennego zgiełku. Z powodu braku czasu nie miałem jak zorganizować namiotu, prowiantu czy transportu. Nie jestem profesjonalnym surwiwalowcem, po prostu się na tym nie znam. Trips stanął na wysokości zadania!</blockquote>
 					<p class="names">Daniel</p>
 				</div>
-				<div class="col span_1_of_2">
+				<div class="col-lg-6">
 					<img src=Resources/css/img/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg class="phototravel">
 					
 			
@@ -113,20 +124,24 @@
 			</div>
 		</section>
 		<section>
-			<div>
-				<h2 id="how_works">Kim jesteśmy?
-			</h2>
-			<p id="how_works_bottom">Pasjonatami podróży, marzycielami spragnionymi nowych miejsc, codziennych przygód, gwiazd i ludzi. Powstrzymać nas może tylko własna wyobraźnia...</p>
+				<div>
+					<h2 id="who_are_we">Kim jesteśmy?
+					</h2>
+					<p id="who_are_we_bottom">Pasjonatami podróży, marzycielami spragnionymi nowych miejsc, codziennych przygód, gwiazd i ludzi. Powstrzymać nas może tylko własna wyobraźnia...</p>
+				</div>
+				<div class="row author">
+					<blockquote>Znów na chodniku piętrzył się stos naszych wysłużonych walizek; czekała nas jeszcze dalsza droga. Ale co tam, droga to życie.
+					</blockquote>
+					<cite>Jack Kerouac</cite>
+				</div>
 			</div>
-			<div class="row author">
-				<blockquote>Znów na chodniku piętrzył się stos naszych wysłużonych walizek; czekała nas jeszcze dalsza droga. Ale co tam, droga to życie.
-				</blockquote>
-				<cite>Jack Kerouac</cite>
-			</div>
-			
 		
 		</section>
-	
+		
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="Vendors/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 	</body>
 
 
