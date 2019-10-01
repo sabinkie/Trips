@@ -389,7 +389,7 @@ padding: 50px 30px;
 	
 	
 html {
-		font-size: 21px;
+		font-size: 22px;
 
 	}
 	
@@ -409,11 +409,11 @@ header {
 }
 	
 .header_name {
-	font-size: 170%;
+	font-size: 180%;
 	margin-left: 2%;
 	letter-spacing: 2px;
 	position: relative;
-	top: 80px;
+	top: 155px;
 	color: #E1F6F4;
 
 }
@@ -434,7 +434,7 @@ header {
 	position: relative;
 	font-size: 90%;
 	letter-spacing: 1px;
-	top: 80px;
+	top: 130px;
 	
 }
 	
@@ -494,6 +494,7 @@ padding: 50px 30px;
 
 #how_works_bottom {
 	margin: 10px 0px;
+	padding-bottom: 20px;
 	word-spacing: 1px;
 	letter-spacing: 1px;
 	font-size: 85%;
