@@ -16,9 +16,10 @@ html {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
-
+	scroll-behavior: smooth;
 
 }
+
 
 /*HEADER*/
 
@@ -31,6 +32,7 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
+	overflow-y: hidden;
 }
 
 
@@ -43,49 +45,67 @@ section {
 /*---logo---*/
 
 .logo {
-	height: 180px;
-	margin-top: 1%;
-	margin-left: 2%;
+	width: 160px;
+	height: auto;
+	
 }
-
+	
 
 
 .header_name {
 	color: #E1F6F4;
 	font-weight: 300;
 	font-size: 300%;
-	margin-top: 13%;
 	margin-left: 2%;
 	letter-spacing: 6px;
-	
+	position: relative;
+	top: 70px;
 }
 
 /*---nav---*/
 
-
-li {
-	float: left;
-	list-style: none;
-	padding: 20px; 
-	margin-right: 0px; 
-
-
+nav {
+	width: 100%;
+	overflow-x: hidden;
 }
+.nav-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items:stretch;
+}
+
 
 ul {
-	padding: 20px; 
-	margin-right: 0px; 
-	margin-left: 205px;
-	float: right; 
-	margin-top: 40px;
-	color: #E1F6F4;
-	font-weight: 400;
-	font-size: 20px;
-	letter-spacing: 2px;
+	display: flex;
+}
 
+li {
+	list-style: none;
+	padding: 2% 2%;
+	margin: 2%;	
+	
+}
+
+li:first-child{
+	margin-left: -20%;
+}
+
+a {
+	text-decoration: none;
+	color: aliceblue;
+	padding: 3% 3%;
+	font-size: 90%;
+	white-space:nowrap;
 
 }
 
+ul>.icon {
+	margin-right: 5%;
+	display: none;
+}
+
+	
 .btn {
 	text-decoration: none;
 	width: auto;
@@ -94,10 +114,6 @@ ul {
 	text-align: center;
 }
 
-a {
-	margin-left: 15%;
-	margin-top: 20px; 
-}
 
 .btn__white  {
 	
@@ -105,19 +121,21 @@ a {
 	background-color: rgba(150, 150, 150, 0.44);
 	font-weight: 400;
 	font-size: 20px;
-	letter-spacing: 2px
+	letter-spacing: 2px;
+	margin-left: 2%;
+	margin-top: 130px;
+
 	
 }
 
 
 .btn__account {
-	margin-top: 9px;
 	padding: 10px 20px;
 	background-color: rgba(150, 150, 150, 0.17);
 	font-weight: 400;
-	font-size: 100%;
+	font-size: 90%;
 	letter-spacing: 2px;
-
+	margin-right: 0px;
 
 }
 
@@ -268,7 +286,7 @@ padding: 70px 20px;
 
 
 
-/*WHO WE ARE*/
+/*WHO ARE WE*/
 
 #who_are_we {
 	text-align: center;

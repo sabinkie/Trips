@@ -23,25 +23,33 @@
 	<body>
 		<div class="container-fluid">
 		<header>
-			<div class="nav">
 				<nav>
-					<img src="Resources/img/logo_green_transparent.png" alt="Trips logo" class="logo">
-					<ul>
-						<li>Wyprawy
-						</li>
-						<li>Jak to działa
-						</li>
-						<li>O nas
-						</li>
-						<li>Kontakt
-						</li>
-						<li class="btn btn__account">Moje konto
-						</li>
-					</ul>
-						
-				
+					<div class="nav-wrapper">
+						<img src="Resources/img/logo_green_transparent.png" alt="Trips logo" class="logo">
+						<ul class="links">
+							<li>
+								<a class="links" href="#travelnav" >Wyprawy</a>
+							</li>
+							<li>
+								<a class="links" href="#how_works">Jak to działa</a>
+							</li>
+							<li>
+								<a class="links" href="#who_are_we">O nas</a>
+							</li>
+							<li>
+								<a class="links">Kontakt</a>
+							</li>
+							<li>
+								<a class="btn btn__account links">
+								Moje konto
+								</a>
+							</li>
+							<i class="icon ion-md-menu"></i>
+
+						</ul>
+
+					</div>
 				</nav>
-			</div>
 			<div>
 				<p class="header_name">Odkryj w sobie podróżnika!</p>
 				<a href="x" class="btn btn__white">Rezerwuj wyprawę</a>
@@ -57,15 +65,15 @@
 
 			<div class="section group">
 				<div class="row">
-					<div class="col-sm-4 columns steps">
+					<div class="col-md-4 columns steps">
 						<i class="icon ion-md-heart"></i>
 						<p>Wypełnij formularz i wyślij nam oczekiwania co do wyprawy oraz informację o budżecie jakim dysponujesz.</p>
 					</div>
-					<div class="col-sm-4 columns steps"> 
+					<div class="col-md-4 columns steps"> 
 						<i class="icon ion-md-happy"></i>
 						<p>Twój personalny opiekun odezwie się do Ciebie w ciągu 24h aby uzyskać więcej szczegółów. Przygotowania mogą potrwać od kilku dni do kilku miesięcy, w zależności jakie są Twoje plany i marzenia.</p>
 					</div>
-					<div class="col-sm-4 columns steps">
+					<div class="col-md-4 columns steps">
 						<i class="icon ion-md-person"></i>
 						<p>Wolny ptak lub dusza towarzystwa? Podczas wyprawy możesz pozostać pod naszą stałą opieką - wirtualną lub na miejscu.</p>
 					</div>
@@ -73,7 +81,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="travels">
+			<div class="travels" id="travelnav">
 			<div class="row">
 				<div class="col-lg-6">
 					<img src=Resources/css/img/roberto-nickson-bd6WND-S-L8-unsplash.jpg class="phototravel">
