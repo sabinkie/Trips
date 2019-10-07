@@ -10,6 +10,7 @@
 		<link href="Vendors/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="Resources/css/style.css">
 		<link href="Resources/css/media.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/gif" href="Resources/img/favicon_green.png" />
 		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400&display=swap" rel="stylesheet">
 		<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
@@ -21,36 +22,36 @@
 		<title>Trips</title>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div>
 		<header>
 				<nav>
 					<div class="nav-wrapper">
-						<img src="Resources/img/logo_green_transparent.png" alt="Trips logo" class="logo">
-						<ul class="links">
+						<a href="#back_to_header"><img src="Resources/img/logo_green_transparent.png" alt="Trips logo" class="logo"></a>
+						<i class="ion-md-menu toggle_js"></i>
+						<ul class="menu_js">
 							<li>
-								<a class="links" href="#travelnav" >Wyprawy</a>
+								<a href="#travelnav" >Wyprawy</a>
 							</li>
 							<li>
-								<a class="links" href="#how_works">Jak to działa</a>
+								<a href="#how_works">Jak to działa</a>
 							</li>
 							<li>
-								<a class="links" href="#who_are_we">O nas</a>
+								<a href="#who_are_we">O nas</a>
 							</li>
 							<li>
-								<a class="links">Kontakt</a>
+								<a>Kontakt</a>
 							</li>
 							<li>
-								<a class="btn btn__account links">
+								<a class="btn btn__account">
 								Moje konto
 								</a>
 							</li>
-							<i class="icon ion-md-menu"></i>
 
 						</ul>
 
 					</div>
 				</nav>
-			<div>
+			<div class="header_wrap" id="back_to_header">
 				<p class="header_name">Odkryj w sobie podróżnika!</p>
 				<a href="x" class="btn btn__white">Rezerwuj wyprawę</a>
 			</div>
@@ -83,8 +84,8 @@
 		<section>
 			<div class="travels" id="travelnav">
 			<div class="row">
-				<div class="col-lg-6">
-					<img src=Resources/css/img/roberto-nickson-bd6WND-S-L8-unsplash.jpg class="phototravel">
+				<div class="col-lg-6 test">
+					<img src=Resources/css/img/roberto-nickson-bd6WND-S-L8-unsplash_optimized.jpg class="phototravel">
 				</div>
 				<div class="col-lg-6">
 					<h3 class="travels_title">Podróż poślubna jak z bajki...</h3>
@@ -99,17 +100,17 @@
 					<blockquote class="quote">Chcieliśmy wypocząć z naszą rodzinką gdzieś za granicą ale bez korzystania ze zbiorowych wycieczek. Trips zorganizował nam wspaniały wypoczynek w Toskani, w agroturystyce prowadzonej przez cudowną włoską rodzinę. Nasze dzieci były zachwycone zwierzętami a my przepyszną, domową kuchnią.</blockquote>
 					<p class="names">Marta, Marek, Agatka, Karolek i Julcia </p>
 				</div>
-				<div class="col-lg-6">
-					<img src=Resources/css/img/irina-murza-vENEN2cryYQ-unsplash.jpg class="phototravel">
+				<div class="col-lg-6 test">
+					<img src=Resources/css/img/irina-murza-vENEN2cryYQ-unsplash_optimized.jpg class="phototravel">
 					
 			
 				</div>
 			</div>
 			<div class="row all_travels">
-				<div class="col-lg-6">
-					<img src=Resources/css/img/ibrahim-rifath-Y6tBl0pTe-g-unsplash.jpg class="phototravel">
+				<div class="col-lg-6 test">
+					<img src=Resources/css/img/ibrahim-rifath-Y6tBl0pTe-g-unsplash_optimized.jpg class="phototravel">
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 test">
 					<h3 class="travels_title">Świat na wyciągnięciu ręki...</h3>
 					<blockquote class="quote">Zawsze marzyłam o podróży dookoła świata. Jestem trochę bojaźliwym typem, martwię się, że coś nie wypali, zostanę na lodzie gdzieś w nieznanym miejscu, ktoś mnie okradnie, itp. Powstrzymywało mnie to przed podróżą przez długie lata. Dzięki Trips przełamałam strach! Z taką opieką podróż to tylko przyjemność! </blockquote>
 					<p class="names">Alicja</p>
@@ -123,8 +124,8 @@
 					<blockquote class="quote">Podczas mojej samotnej wyprawy do dziczy w końcu odetchnąłem od codziennego zgiełku. Z powodu braku czasu nie miałem jak zorganizować namiotu, prowiantu czy transportu. Nie jestem profesjonalnym surwiwalowcem, po prostu się na tym nie znam. Trips stanął na wysokości zadania!</blockquote>
 					<p class="names">Daniel</p>
 				</div>
-				<div class="col-lg-6">
-					<img src=Resources/css/img/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg class="phototravel">
+				<div class="col-lg-6 test">
+					<img src=Resources/css/img/scott-goodwill-y8Ngwq34_Ak-unsplash_optimized.jpg class="phototravel">
 					
 			
 				</div>
@@ -150,6 +151,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="Vendors/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<script src="Resources/js/main.js"></script>
 	</body>
 
 

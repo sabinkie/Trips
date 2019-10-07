@@ -17,8 +17,11 @@ html {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	scroll-behavior: smooth;
-
 }
+
+*::selection {
+	background-color: #ecefef;
+	}
 
 
 /*HEADER*/
@@ -26,7 +29,7 @@ html {
 
 header {
 	
-	background-image: linear-gradient(rgba(83, 83, 83, 0.28), rgba(0, 0, 0, 0)),url(img/banter-snaps-387953-unsplash.jpg);
+	background-image: linear-gradient(rgba(83, 83, 83, 0.28), rgba(2, 2, 2, 0.49)),url(img/mainpic.jpg);
 	background-position: bottom;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -45,21 +48,31 @@ section {
 /*---logo---*/
 
 .logo {
-	width: 160px;
-	height: auto;
+	width: 100px;
+	height: 100px;
+	position:static;
+	 
 	
 }
 	
+
+
+.header_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 131%;
+    flex-direction: column;}
+
 
 
 .header_name {
 	color: #E1F6F4;
 	font-weight: 300;
 	font-size: 220%;
-	margin-left: 2%;
 	letter-spacing: 6px;
-	position: relative;
-	top: 150px;
+
 }
 
 /*---nav---*/
@@ -71,39 +84,85 @@ nav {
 .nav-wrapper {
 	width: 100%;
 	display: flex;
+	align-items:center;
+	position: fixed;
+	z-index: 999;
+	background-color: #88b4b4;
 	justify-content: space-between;
-	align-items:stretch;
+	height: 52px;
+
 }
 
 
-ul {
+
+.menu_js {
 	display: flex;
+	top: 0;
 }
 
-li {
+.menu_js li {
 	list-style: none;
-	padding: 2% 2%;
-	margin: 2%;	
-	
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 16px /*here*/
 }
 
-li:first-child{
-	margin-left: -20%;
+
+li:last-child {
+	margin-bottom: 20px; 
 }
 
-a {
+
+.menu_js a {
 	text-decoration: none;
 	color: aliceblue;
-	padding: 3% 3%;
-	font-size: 90%;
+	font-size: 80%;
 	white-space:nowrap;
+	transition: 0.5s;
+	transition-delay: 0.3s;
+}
+
+.menu_js a:hover{
+	color: rgba(193, 255, 255, 0.9);
 
 }
 
-ul>.icon {
-	margin-right: 5%;
+
+
+.toggle_js {
 	display: none;
+    z-index: 999;
+	margin: 5%;
+	cursor: pointer;
+	font-size: 170%;
+	color: aliceblue;
+	align-items: center;
+	transition: 0.5s;
+	transition-delay: 0.3s;
+
+
 }
+
+.toggle_js:hover{
+		color: rgba(193, 255, 255, 0.9);
+
+}
+
+.expanded {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+	margin-top: 52px;
+	margin-right: 0%;
+	margin-bottom: 0px; 
+	padding: 1%;
+	width:100%;
+	background-color: rgb(136, 180, 180);
+	position: absolute;
+}
+
 
 	
 .btn {
@@ -122,21 +181,39 @@ ul>.icon {
 	font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 2px;
-	margin-left: 2%;
-	margin-top: 130px;
-	position: relative;
-	top: 120px;
+	white-space: nowrap;
+	width: 40%;
 
-	
+
 }
 
+@keyframes color {
+  0%   {background: linear-gradient(90deg, rgba(255,255,255,0.5354516806722689) 0%, rgba(136,180,180,0.5914740896358543) 21%, rgba(79,183,204,0.8575805322128851) 65%);}
+  25%  {background: linear-gradient(90deg, rgba(255,255,255,0.5354516806722689) 7%, rgba(136,180,180,0.5914740896358543) 32%, rgba(79,183,204,0.8575805322128851) 65%);}
+	50% {background: linear-gradient(90deg, rgba(255,255,255,0.5354516806722689) 16%, rgba(136,180,180,0.5914740896358543) 42%, rgba(79,183,204,0.8575805322128851) 70%);}
+  100% {background: linear-gradient(90deg, rgba(255,255,255,0.5354516806722689) 19%, rgba(136,180,180,0.5914740896358543) 49%, rgba(79,183,204,0.8575805322128851) 96%);}
+}
+
+
+
+.btn__white:hover {
+	color: rgb(255, 255, 255);
+	 animation-name: color;
+   	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in;
+	animation-direction: alternate;
+
+	
+
+}
 
 .btn__account {
 	padding: 10px 20px;
 	background-color: rgba(150, 150, 150, 0.17);
 	font-weight: 400;
-	font-size: 90%;
-	letter-spacing: 2px;
+	font-size: 70%;
+	letter-spacing: 1px;
 	margin-right: 0px;
 
 }
@@ -173,7 +250,7 @@ cite {
 }
 
 .author {
-background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(74, 74, 74, 0.33)),url(img/paula-may-AJqeO_-ifx0-unsplash.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(74, 74, 74, 0.33)),url(img/paula-may-AJqeO_-ifx0-unsplash_optimized.jpg);
 background-position:center; 
 background-size:100%;
 background-repeat: no-repeat;
@@ -243,6 +320,32 @@ padding: 70px 20px;
 	height: auto;
 	width: 100%;
 	border-radius: 5%;
+	margin: 0 auto;
+
+
+}
+
+.test {
+	overflow: hidden;
+	height: auto;
+
+}
+
+.test img{
+
+	transition-duration: 5s;
+	margin: 0 auto;
+
+
+}
+
+.test img:hover {
+
+	transform: scale(1.5);
+	z-index: 0;
+	overflow: hidden;
+
+
 }
 
 .travels {
