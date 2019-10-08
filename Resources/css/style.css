@@ -168,7 +168,7 @@ li:last-child {
 .btn {
 	text-decoration: none;
 	width: auto;
-	padding: 10px 4px;
+	padding: 10px 0px;
 	border: 1px solid;
 	text-align: center;
 }
@@ -182,7 +182,8 @@ li:last-child {
 	font-size: 20px;
 	letter-spacing: 2px;
 	white-space: nowrap;
-	width: 40%;
+	padding-left: 15%;
+	padding-right: 15%;
 
 
 }

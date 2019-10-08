@@ -60,7 +60,8 @@ header {
 	.btn__white  {
 	font-size: 90%;
 	letter-spacing: 1px;
-	width: 64%;
+	padding-right: 10%;
+	padding-left: 10%;
 	
 }
 	
@@ -262,7 +263,6 @@ header {
 	.btn__white  {
 	font-size: 90%;
 	letter-spacing: 1px;
-	width: 50%; 
 	
 	
 }
